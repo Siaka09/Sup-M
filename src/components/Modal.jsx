@@ -72,12 +72,12 @@ export const Modal = ({ closeModal, onSubmit, defaultValue }) => {
             >
               <option value="actif">Actif</option>
               <option value="brouillon">Brouillon</option>
-              <option value="error">Error</option>
+              <option value="annulé">Annulé</option>
             </select>
           </div>
           {errors && <div className="error">{`Please include: ${errors}`}</div>}
           <button type="submit" className="btn" onClick={handleSubmit}>
-            Submit
+            Soumettre
           </button>
         </form>
       </div>
